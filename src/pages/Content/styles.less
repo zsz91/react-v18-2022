@@ -1,9 +1,30 @@
 .content-div{
-  width: 21cm;
+  width: 20cm;
   overflow-x: hidden;
-  min-height: 29.5cm;
+  //min-height: 29.5cm;
   display: grid;
   margin: 0 auto;
   justify-items: center;
   margin-top: 2rem;
+  .table{
+    border: 1px solid #000;
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    .line_1{
+      display: grid;
+      width: 100%;
+      grid-template-columns: 4fr 3fr 3fr;
+      align-items: center;
+      padding: 5px;
+      line-height: 1cm;
+      border-bottom: 1px solid #000;
+      margin-bottom: -1px;
+      span{
+        //border: 1px solid #000;
+        margin-left: -1px;
+        font-size: 14px;
+      }
+    }
+  }
 }
