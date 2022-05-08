@@ -1,0 +1,31 @@
+{
+  "name": "my",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "viteBuild": "vite build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.20.2",
+    "prettier": "^2.4.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^7.2.5",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-router": "^5.1.16",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.8"
+  }
+}
