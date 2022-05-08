@@ -1,38 +1,20 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './index.less';
+import ReactToPrint from "react-to-print";
+import {Button} from 'antd';
+import Content from '../Content/index';
 
-export default function Home(props){
-
+export default function Home(props) {
+    const printDom = useRef();
     return <div className={'home'}>
-        <h2>叶师傅-汽车维修清单打印</h2>
-        <div>
-            <table>
-                <thead>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        2
-                    </td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>
-                        3
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        4
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <ReactToPrint
+            trigger={() => {
+                return  <Button type={'primary'}>打印</Button>;
+            }}
+            content={() => printDom.current}
+        />
+
+        <Content ref={printDom}/>
     </div>
 
 }

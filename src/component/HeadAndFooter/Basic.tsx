@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import Head from "./Head";
 import  './basic.less';
 export default function Basic(props){
     const { children, ...otherProps} = props;
